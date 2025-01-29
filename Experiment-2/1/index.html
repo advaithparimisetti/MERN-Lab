@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Version</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <!--  Display version number of the used browser on the screen -->
+    <div class="browser-info">
+        <h1>Browser Information</h1>
+        <p id="browser-version">Detecting...</p>
+    </div>
+    <script>
+        document.getElementById("browser-version").textContent = navigator.appVersion;
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1E1E1E;
+        }
+        .browser-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #2B4F81;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            color: #FFD700;
+        }
+        .browser-info h1 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 600;
+        }
+        .browser-info p {
+            margin: 10px 0 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    </style>
+</body>
+</html>
